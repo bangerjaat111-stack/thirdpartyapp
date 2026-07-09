@@ -29,7 +29,7 @@ export default function () {
 
     return (
         <header className='p-2 '>
-            <nav className='flex justify-between shadow-2xl text-2xl bg-black text-white  py-4 px-2 md:px-6  lg:px-8 xl:px-15 2xl:px-20 items-center rounded-full'>
+            <nav className='flex  top-0 justify-between shadow-2xl text-2xl bg-black text-white  py-4 px-2 md:px-6  lg:px-8 xl:px-15 2xl:px-20 items-center rounded-full'>
                 <Link to="/"><h1>YB</h1></Link>
 
                 <ul className='lg:flex  hidden justify-between items-center gap-5'>
@@ -77,12 +77,11 @@ export default function () {
                         }
                     </ul>
 
-                    <div>]
-                        [0gt4   1XE3DRF45UJ7,RXW9KQ Y5TV32CSXQZAvfbghu8jn6de]
+                    <div>
                         {
                             auth.map(({ icons, name, slug }, index) => (
                                 <Link key={index} to={slug}>
-                                    <button className=' flex items-center gap-1'>{icons} <h2>{name}</h2></button>
+                                    <button className=' bg-black text-white items-center flex gap-2  '>{icons} <h2>{name}</h2></button>
                                 </Link>
 
                             ))
